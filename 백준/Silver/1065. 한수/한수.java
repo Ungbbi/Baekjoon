@@ -23,10 +23,7 @@ public class Main {
                 int tmp = nums[1]-nums[0];
                 boolean istrue = false;
                 for(int j=1;j<dl-1;j++){
-                    if(tmp == nums[j+1]-nums[j]){
-                           istrue = true;
-                    }
-                    else istrue = false;
+                    istrue = tmp == nums[j + 1] - nums[j];
                 }
                 if (istrue) cnt++;
             }
