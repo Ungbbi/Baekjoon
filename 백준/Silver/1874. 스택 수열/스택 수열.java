@@ -29,17 +29,21 @@ class Stack{
         return value[pivot-1];
     }
 }
+
+
 public class Main {
     public static void main(String[] args) throws IOException {
+        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(reader.readLine());
+        
         int[] numbers = new int[N+1];
-        int[] answer = new int[N];
         List<Character> calcul = new ArrayList<>();
 
         for(int i=1;i<=N;i++){
             numbers[i] = i;
         }
+        
         Stack stack = new Stack(N);
         int j = 1;
 
